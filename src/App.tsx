@@ -8,13 +8,13 @@ import {
 } from '@microsoft/fast-components';
 import { provideReactWrapper } from '@microsoft/fast-react-wrapper';
 
-import { cerButtonBasic } from 'demo-fast-foundation-extended';
+// import { cerButtonBasic } from 'demo-fast-foundation-extended';
 
 const { wrap } = provideReactWrapper(React, provideFASTDesignSystem());
 
 export const FastCard = wrap(fastCard());
 export const FastButton = wrap(fastButton());
-export const TestCerButtonBasic = wrap(cerButtonBasic());
+// export const TestCerButtonBasic = wrap(cerButtonBasic());
 
 function App() {
   return (
@@ -38,7 +38,7 @@ function App() {
         <FastButton appearance="accent" onClick={() => console.log('clicked')}>
           Click Me
         </FastButton>
-        <TestCerButtonBasic appearance="accent">test</TestCerButtonBasic>
+        {/* <TestCerButtonBasic appearance="accent">test</TestCerButtonBasic> */}
       </FastCard>
     </div>
   );
